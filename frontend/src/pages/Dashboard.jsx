@@ -14,7 +14,6 @@ const Dashboard = () => {
     <div className="min-h-screen bg-gray-100 py-8">
         <div className="max-w-4xl mx-auto px-4">
         
-        {/* Header */}
         <div className="flex items-center justify-between mb-6">
             <h1 className="text-2xl font-bold text-gray-800">
             My Tickets
@@ -28,7 +27,6 @@ const Dashboard = () => {
             </button>
         </div>
 
-        {/* Tickets */}
         {tickets.length === 0 ? (
             <div className="bg-white rounded-xl shadow p-10 text-center">
             <p className="text-gray-500 text-lg">

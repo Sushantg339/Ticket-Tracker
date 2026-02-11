@@ -53,7 +53,7 @@ const UpdateTicket = () => {
         )}
 
         <div>
-          <input
+          <input autoComplete="off"
             className="w-full border p-2 rounded"
             placeholder="Title"
             {...register("title", { required: "Title is required" })}
@@ -64,7 +64,7 @@ const UpdateTicket = () => {
         </div>
 
         <div>
-          <textarea
+          <textarea autoComplete="off"
             className="w-full border p-2 rounded"
             placeholder="Description"
             {...register("description", {
@@ -80,7 +80,7 @@ const UpdateTicket = () => {
 
         <div>
           <label className="text-sm font-medium">Status</label>
-          <select
+          <select autoComplete="off"
             className="w-full border p-2 rounded"
             {...register("status")}
           >
@@ -93,6 +93,7 @@ const UpdateTicket = () => {
         <div>
           <label className="text-sm font-medium">Priority</label>
           <select
+            autoComplete="off"
             className="w-full border p-2 rounded"
             {...register("priority")}
           >

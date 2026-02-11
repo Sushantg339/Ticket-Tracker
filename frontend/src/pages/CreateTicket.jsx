@@ -33,7 +33,7 @@ const CreateTicket = () => {
         </h2>
 
         <div>
-          <input
+          <input autoComplete="off"
             className="w-full border p-2 rounded focus:outline-none focus:ring"
             placeholder="Title"
             {...register("title", {
@@ -48,7 +48,7 @@ const CreateTicket = () => {
         </div>
 
         <div>
-          <textarea
+          <textarea autoComplete="off"
             className="w-full border p-2 rounded focus:outline-none focus:ring"
             placeholder="Description"
             {...register("description", {
@@ -63,7 +63,7 @@ const CreateTicket = () => {
         </div>
 
         <div>
-          <select
+          <select autoComplete="off"
             className="w-full border p-2 rounded"
             {...register("priority", {
               required: true

@@ -29,7 +29,7 @@ const Login = () => {
         <h2 className="text-xl font-bold text-center">Login</h2>
 
         <div>
-          <input
+          <input autoComplete="off"
             type="email"
             className="w-full border p-2 rounded focus:outline-none focus:ring"
             placeholder="Email"
@@ -49,7 +49,7 @@ const Login = () => {
         </div>
 
         <div>
-          <input
+          <input autoComplete="off"
             type="password"
             className="w-full border p-2 rounded focus:outline-none focus:ring"
             placeholder="Password"
